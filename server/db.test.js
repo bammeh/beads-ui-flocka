@@ -29,14 +29,14 @@ afterEach(() => {
 
 describe('resolveDbPath', () => {
   test('uses explicit_db when provided', () => {
-    const res = resolveDbPath({ cwd: '/x', explicit_db: './my.db', env: {} });
-    expect(res.path.endsWith('/x/my.db')).toBe(true);
+    const res = resolveDbPath({ cwd: '\\x', explicit_db: '\\x\\my.db', env: {} });
+    expect(res.path.endsWith('\\x\\my.db')).toBe(true);
     expect(res.source).toBe('flag');
   });
 
   test('uses BEADS_DB from env when set', () => {
-    const res = resolveDbPath({ cwd: '/x', env: { BEADS_DB: '/abs/env.db' } });
-    expect(res.path).toBe('/abs/env.db');
+    const res = resolveDbPath({ cwd: '\\x', env: { BEADS_DB: '\\abs\\env.db' } });
+    expect(res.path).toBe('\\abs\\env.db');
     expect(res.source).toBe('env');
   });
 

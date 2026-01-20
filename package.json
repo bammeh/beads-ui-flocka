@@ -1,5 +1,5 @@
 {
-  "name": "beads-ui",
+  "name": "beads-ui-flocka",
   "version": "0.9.1",
   "description": "Local UI for Beads — Collaborate on issues with your coding agent.",
   "keywords": [
@@ -12,7 +12,7 @@
   "author": "Maximilian Antoni <mail@maxantoni.de>",
   "type": "module",
   "bin": {
-    "bdui": "bin/bdui.js"
+    "bui-f": "bin/bdui.js"
   },
   "engines": {
     "node": ">=22"
@@ -75,6 +75,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mantoni/beads-ui.git"
+    "url": "https://github.com/bammeh/beads-ui-flocka.git"
   }
 }
